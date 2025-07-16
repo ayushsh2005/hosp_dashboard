@@ -21,7 +21,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/user/admin/me",
+          "https://hosp-backend.onrender.com/api/v1/user/admin/me",
           {
             withCredentials: true,
           }
@@ -34,7 +34,7 @@ const App = () => {
       }
     };
     fetchUser();
-  }, [isAuthenticated]);
+  }, []);
 
   return (
     <Router>
